@@ -42,7 +42,7 @@ export default function Homepage() {
             const formData = new FormData();
             formData.append("file", file);
 
-            const res = await fetch("http://localhost:8000/analyze", {
+            const res = await fetch("https://unthinkable-assessment-1.onrender.com/analyze", {
                 method: "POST",
                 body: formData,
             });

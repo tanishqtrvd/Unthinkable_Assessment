@@ -1,0 +1,120 @@
+/* Page layout */
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: #1e1e2f;
+  color: #eaeaea;
+}
+
+.page {
+  padding: 1rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: #61dafb;
+}
+.tagline {
+  text-align: center;
+  font-size: 1rem;
+  color: #aaa;
+  margin-bottom: 2rem;
+}
+
+/* Upload zone */
+.upload-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px dashed #61dafb;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.upload-zone p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+.upload-circle {
+  font-size: 2.5rem;
+}
+.upload-zone:hover,
+.upload-zone.drag-active {
+  background: rgba(97, 218, 251, 0.1);
+  transform: scale(1.05);
+}
+.upload-zone input[type="file"] {
+  display: none;
+}
+
+/* Results layout */
+.results {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Result cards */
+.result-card {
+  background: #2a2a3d;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: inset -3px -3px 7px #383850, inset 3px 3px 5px #141420;
+  transition: transform 0.2s;
+}
+.result-card:hover {
+  transform: translateY(-3px);
+}
+.result-card h3 {
+  margin-bottom: 1rem;
+  color: #61dafb;
+}
+
+/* Section blocks */
+.section-block {
+  margin-bottom: 1rem;
+}
+.block-title {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: #ffd166;
+}
+.block-content {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 0.8rem;
+  background: #61dafb;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #4ec0e0;
+  box-shadow: 0 0 10px rgba(97, 218, 251, 0.6);
+}
+
+/* Loading overlay */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ffd166;
+}
